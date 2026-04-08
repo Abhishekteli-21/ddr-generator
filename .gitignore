@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# API keys and secrets
+.env
+
+# Project specific local data
+temp/
+input/
+output/
+ddr_generator.log
