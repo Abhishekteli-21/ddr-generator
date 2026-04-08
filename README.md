@@ -85,4 +85,4 @@ To answer the prompt criteria for continuous improvement:
 2. **Dense Tabular OCR Fallback**: If a PDF is a highly compressed scan, Native Vision struggles to read dense sensor tables.
    - *Improvement*: Integrate `PaddleOCR` or `pytesseract` to extract hard tabular data first, passing it as a text string alongside the image to ground the LLM.
 3. **Automated Defect Flagging**: Currently, the AI relies on the human inspector's written notes.
-   - *Improvement*: Train a tiny YOLOv8 vision model to explicitly detect severe heat anomalies in the raw thermal images, overriding the text report if the human inspector missed a critical hotspot.
+   - *Improvement*: Train a tiny YOLOv8 vision model or most reccently launched IBM's Dockling to explicitly detect severe heat anomalies in the raw thermal images, overriding the text report if the human inspector missed a critical hotspot.
